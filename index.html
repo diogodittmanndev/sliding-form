@@ -69,24 +69,28 @@
           </div>
           <p class="login-options__text">Ou se cadastre com o e-mail...</p>
         </div>
-        <form action="">
-          <div class="form__field">
-            <i class="uil uil-at"></i>
-            <input type="email" placeholder="E-mail" required>
-          </div>
+        <form id="form" action="">
           <div class="form__field">
             <i class="uil uil-user"></i>
-            <input type="text" placeholder="Nome Completo" required>
+            <input id="username" type="text" placeholder="Nome Completo">
+            <i class="iconError"></i>
+          </div>
+          <div class="form__field">
+            <i class="uil uil-at"></i>
+            <input id="email" type="email" placeholder="E-mail">
+            <i class="iconError"></i>
           </div>
           <div class="form__field">
             <i class="uil uil-lock-alt"></i>
-            <input class="form__password-input" type="password" placeholder="Senha" required>
+            <input id="password" class="form__password-input" type="password" placeholder="Senha">
             <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+            <i class="iconError"></i>
           </div>
           <div class="form__field">
             <i class="uil uil-lock-access"></i>
-            <input class="form__password-input" type="password" placeholder="Confirme a Senha" required>
+            <input id="confirm-password" class="form__password-input" type="password" placeholder="Confirme a Senha">
             <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+            <i class="iconError"></i>
           </div>
           <input class="form__submit-btn" type="submit" value="Cadastro">
         </form>
@@ -116,7 +120,7 @@
     <!-- BACKGROUND ANIMATION -->
 
   </div>
-  <script src="index.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
